@@ -14,6 +14,7 @@ namespace Asag
             Console.WriteLine($"{p1.prod_description} - {p1.quantity}");
             Console.WriteLine($"{p2.prod_description} - {p2.quantity}");
             Console.WriteLine($"{p3.prod_description} - {p3.quantity}");
+            Console.WriteLine($"Total inventory count: {p1.quantity +  p2.quantity + p3.quantity}");
             Console.ReadKey();
         }
 
@@ -35,7 +36,7 @@ namespace Asag
         {
             for (int i = 0; i < 100; i++)
             {
-                Console.Write("*");
+                Console.Write("-");
             }
             Console.WriteLine();
         }
@@ -62,9 +63,10 @@ namespace Asag
                 Console.WriteLine("Select a number based on your need.");
                 secLineGenerator();
 
-                Console.WriteLine("1. Print current inventory");
+                Console.WriteLine("1. Print current inventory reports");
                 Console.WriteLine("2. Print sales report");
-                Console.WriteLine("3. Exit HeavenEleven");
+                Console.WriteLine("3. Print all reports");
+                Console.WriteLine("4. Exit HeavenEleven");
 
                 string user_choice = Console.ReadLine();
 
@@ -79,6 +81,12 @@ namespace Asag
                         break;
 
                     case "3":
+                        SalesReport();
+                        secLineGenerator();
+                        InventoryReport();
+                        break;
+
+                    case "4":
                         Console.WriteLine("Are you sure? Y for Yes or N for No?");
                         string choice = Console.ReadLine();
 
@@ -92,7 +100,6 @@ namespace Asag
                             continue;
                         }
                         break;
-                        
 
                     default:
                         Console.WriteLine("Not an option. Please try again");
