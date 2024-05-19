@@ -41,15 +41,6 @@ namespace Asag
             Console.WriteLine();
         }
 
-        static void secLineGenerator()
-        {
-            for (int i = 0; i < 100; i++)
-            {
-                Console.Write("-");
-            }
-            Console.WriteLine();
-        }
-
         static void Main(string[] args)
         {
             while (true)
@@ -61,7 +52,7 @@ namespace Asag
                 
 
                 Console.WriteLine("Select a number based on your need.");
-                secLineGenerator();
+                LineGeneration();
 
                 Console.WriteLine("1. Print current inventory reports");
                 Console.WriteLine("2. Print sales report");
@@ -82,7 +73,7 @@ namespace Asag
 
                     case "3":
                         SalesReport();
-                        secLineGenerator();
+                        LineGeneration();
                         InventoryReport();
                         break;
 
