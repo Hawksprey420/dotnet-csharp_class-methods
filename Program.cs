@@ -50,7 +50,6 @@ namespace Asag
 
                 Console.WriteLine("What would you like to do?");
                 
-
                 Console.WriteLine("Select a number based on your need.");
                 LineGeneration();
 
@@ -96,8 +95,6 @@ namespace Asag
                         Console.WriteLine("Not an option. Please try again");
                         break;
                 }
-
-
             }
         }   
     }
