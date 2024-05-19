@@ -5,7 +5,7 @@ Feel free to take a look around the code :D  (don't expect software engineer lev
 
 Requirements to run/compile:<br>
 ------------------------------
-.NET 8.0 (LTS version)
+.NET 8.0 (LTS version)<br>
 Visual Studio Community 2022 (or with Visual Studio Build Tools)
 
 Images:
