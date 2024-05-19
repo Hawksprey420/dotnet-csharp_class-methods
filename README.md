@@ -1,4 +1,4 @@
-![image](https://github.com/Hawksprey420/dotnet-csharp_class-methods/assets/75325547/5c76096f-d442-43f5-ae56-5e0e3b3c0bfc)About this C# repository
+About this C# repository
 ----------------------------------------------------
 This is the **Github repository** for the csharp_class-methods activity of Hawksprey for the subject Computer Programming 2 for BS Computer Science.<br>
 Feel free to take a look around the code :D  (don't expect software engineer levels of coding standards for now)
